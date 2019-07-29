@@ -22,3 +22,6 @@ Route::get('/post/create', 'PostController@create')->name('create_post')->middle
 Route::post('/post/store', 'PostController@store')->name('store_post');
 Route::get('/posts', 'PostController@index')->name('blog');
 Route::get('/single_post/{post}', 'PostController@show')->name('single_post');
+Route::get('comments',function(){
+dd();
+});
